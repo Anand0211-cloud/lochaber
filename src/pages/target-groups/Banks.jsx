@@ -1,20 +1,26 @@
+import { Link } from 'react-router-dom';
 import Layout from '../../components/Layout';
+import SEO from '../../components/SEO';
 
 const Banks = () => {
   return (
     <Layout>
-      <main className="pt-24">
+      <SEO
+        title="ESG Immobilien Banken & Finanzierer Lösungen"
+        description="MaRisk-konforme Beleihungswert-Indikationen & ESG-Checks für Banken. Lochaber bietet institutionelle Immobilienanalysen deutschlandweit."
+      />
+      <main className="pt-22">
         {/* Hero Section */}
         <section className="px-8 py-20 max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
           <div className="lg:col-span-8">
-            <span className="inline-block text-secondary font-label text-[0.75rem] font-semibold uppercase tracking-[0.2em] mb-6">Institutional Excellence</span>
+            <span className="inline-block text-secondary font-label text-[0.75rem] font-semibold uppercase tracking-[0.2em] mb-6">Institutionelle Exzellenz</span>
             <h1 className="font-headline text-5xl md:text-7xl font-bold text-primary tracking-tight leading-[1.1] mb-8">
-              Institutional-Grade <br/>
-              <span className="text-secondary-fixed-dim">ESG Compliance</span> and <br/>
-              Regulatory Reporting.
+              Institutionelle <br/>
+              <span className="text-secondary-fixed-dim">ESG-Compliance</span> und <br/>
+              regulatorisches Reporting.
             </h1>
             <p className="text-on-surface-variant text-xl max-w-2xl leading-relaxed">
-              Navigate the complex landscape of BaFin and EU mandates with precision. Our automated systems provide institutional-grade validation for banks and insurers.
+              Navigieren Sie die komplexe Landschaft der BaFin- und EU-Anforderungen mit Präzision. Unsere automatisierten Systeme bieten institutionelle Validierung für Banken und Versicherer.
             </p>
           </div>
           <div className="lg:col-span-4 flex flex-col items-start lg:items-end">
@@ -22,8 +28,8 @@ const Banks = () => {
               <img className="w-full h-full object-cover mix-blend-overlay opacity-60 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEuops4Rh3gwy3dcDZclcA0jr2TMfHbTmLHy81DtfMtLWptW3sInXrxbt8gzNfmaXejSVTuCE0TGK1ciSwIvJjV2z7dkyLHdSsz5KYfAp0xIMxrALkd4MwS2ALcOwq79b7teToK6rIBmW0vWNu0PgchBhVCh1R1LebFM0Iy8ZTW2BJlWYnDtfWtGcY1Xj_gaCRE8QI4jKqD9YhgOC-1eugTcXmZUcWvWB7zFD97VfbZ5nTdoPCF-2QsJgvcj11LiHU6SXDSKjRno4"/>
               <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
               <div className="absolute bottom-8 left-8 right-8">
-                <div className="text-on-primary font-headline text-2xl font-semibold mb-2">99.8%</div>
-                <p className="text-on-primary-container text-sm uppercase tracking-widest font-semibold">Reporting Accuracy</p>
+                <div className="text-on-primary font-headline text-2xl font-semibold mb-2">99,8%</div>
+                <p className="text-on-primary-container text-sm uppercase tracking-widest font-semibold">Berichtsgenauigkeit</p>
               </div>
             </div>
           </div>
@@ -37,19 +43,19 @@ const Banks = () => {
               <div className="md:col-span-1 bg-surface-container-lowest p-10 flex flex-col justify-between">
                 <div>
                   <span className="material-symbols-outlined text-error text-3xl mb-6">warning</span>
-                  <h3 className="font-headline text-2xl font-semibold text-primary mb-4">The Complexity Crisis</h3>
+                  <h3 className="font-headline text-2xl font-semibold text-primary mb-4">Die Komplexitätskrise</h3>
                   <ul className="space-y-4 text-on-surface-variant">
                     <li className="flex items-start gap-3">
                       <span className="material-symbols-outlined text-sm mt-1">close</span>
-                      <span>Escalating ESG mandates and regulatory pressures.</span>
+                      <span>Eskalierende ESG-Vorgaben und regulatorischer Druck.</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="material-symbols-outlined text-sm mt-1">close</span>
-                      <span>Critical manual review bottlenecks in asset valuation.</span>
+                      <span>Kritische manuelle Prüfungsengpässe bei der Objektbewertung.</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="material-symbols-outlined text-sm mt-1">close</span>
-                      <span>Inconsistent data across institutional portfolios.</span>
+                      <span>Inkonsistente Daten über institutionelle Portfolios hinweg.</span>
                     </li>
                   </ul>
                 </div>
@@ -57,42 +63,42 @@ const Banks = () => {
               {/* The Solution */}
               <div className="md:col-span-2 bg-primary p-10 relative overflow-hidden">
                 <div className="relative z-10">
-                  <h3 className="font-headline text-3xl font-bold text-on-primary mb-8">Automated Precision Solutions</h3>
+                  <h3 className="font-headline text-3xl font-bold text-on-primary mb-8">Automatisierte Präzisionslösungen</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                     <div>
                       <h4 className="text-secondary-container font-semibold mb-2 flex items-center gap-2">
                         <span className="material-symbols-outlined">auto_awesome</span>
-                        Automated Scoring
+                        Automatisiertes Scoring
                       </h4>
                       <p className="text-on-primary-container text-sm leading-relaxed">
-                        Real-time ESG scoring modules that integrate directly with existing banking core systems via secure API.
+                        Echtzeit-ESG-Scoring-Module, die sich direkt über sichere API in bestehende Bankkernsysteme integrieren.
                       </p>
                     </div>
                     <div>
                       <h4 className="text-secondary-container font-semibold mb-2 flex items-center gap-2">
                         <span className="material-symbols-outlined">gavel</span>
-                        BaFin-Compliant Reports
+                        BaFin-konforme Berichte
                       </h4>
                       <p className="text-on-primary-container text-sm leading-relaxed">
-                        Audit-ready documentation generated automatically, satisfying the most stringent regulatory inquiries.
+                        Automatisch generierte, prüfungssichere Dokumentation, die strengsten regulatorischen Anfragen standhält.
                       </p>
                     </div>
                     <div>
                       <h4 className="text-secondary-container font-semibold mb-2 flex items-center gap-2">
                         <span className="material-symbols-outlined">psychology</span>
-                        AI-Powered Validation
+                        KI-gestützte Validierung
                       </h4>
                       <p className="text-on-primary-container text-sm leading-relaxed">
-                        Cross-referencing property data against global ESG benchmarks using proprietary machine learning models.
+                        Querverweis von Immobiliendaten mit globalen ESG-Benchmarks mittels proprietärer Machine-Learning-Modelle.
                       </p>
                     </div>
                     <div>
                       <h4 className="text-secondary-container font-semibold mb-2 flex items-center gap-2">
                         <span className="material-symbols-outlined">security</span>
-                        Data Integrity
+                        Datenintegrität
                       </h4>
                       <p className="text-on-primary-container text-sm leading-relaxed">
-                        Zero-trust architecture ensuring all sensitive institutional data remains within sovereign boundaries.
+                        Zero-Trust-Architektur, die sicherstellt, dass alle sensiblen institutionellen Daten innerhalb souveräner Grenzen bleiben.
                       </p>
                     </div>
                   </div>
@@ -105,25 +111,25 @@ const Banks = () => {
         {/* Services */}
         <section className="py-24 px-8 max-w-[1440px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
-            <h2 className="font-headline text-4xl font-bold text-primary">Core Institutional Services</h2>
+            <h2 className="font-headline text-4xl font-bold text-primary">Institutionelle Kernleistungen</h2>
             <div className="h-px flex-grow bg-outline-variant/30 mx-8 hidden md:block"></div>
-            <span className="text-secondary font-label font-bold tracking-[0.1em]">THE GOLD STANDARD</span>
+            <span className="text-secondary font-label font-bold tracking-[0.1em]">DER GOLDSTANDARD</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="group">
               <div className="bg-surface-container h-[2px] w-full mb-8 group-hover:bg-secondary transition-colors duration-500"></div>
               <h4 className="font-headline text-xl font-bold text-primary mb-2">Bank Check</h4>
-              <p className="text-on-surface-variant mb-8 leading-relaxed">Comprehensive risk assessment of real estate collateral under current ESG guidelines.</p>
+              <p className="text-on-surface-variant mb-8 leading-relaxed">Umfassende Risikobewertung von Immobiliensicherheiten nach aktuellen ESG-Richtlinien.</p>
             </div>
             <div className="group">
               <div className="bg-surface-container h-[2px] w-full mb-8 group-hover:bg-secondary transition-colors duration-500"></div>
               <h4 className="font-headline text-xl font-bold text-primary mb-2">Portfolio Scan</h4>
-              <p className="text-on-surface-variant mb-8 leading-relaxed">Aggregated data analysis across diverse holdings to identify systemic ESG exposure.</p>
+              <p className="text-on-surface-variant mb-8 leading-relaxed">Aggregierte Datenanalyse über diverse Bestände zur Identifikation systemischer ESG-Exposition.</p>
             </div>
             <div className="group">
               <div className="bg-surface-container h-[2px] w-full mb-8 group-hover:bg-secondary transition-colors duration-500"></div>
-              <h4 className="font-headline text-xl font-bold text-primary mb-2">Framework Contract</h4>
-              <p className="text-on-surface-variant mb-8 leading-relaxed">Standardized recurring analysis for ongoing compliance and internal auditing.</p>
+              <h4 className="font-headline text-xl font-bold text-primary mb-2">Rahmenvertrag</h4>
+              <p className="text-on-surface-variant mb-8 leading-relaxed">Standardisierte wiederkehrende Analyse für fortlaufende Compliance und interne Prüfungen.</p>
             </div>
           </div>
         </section>

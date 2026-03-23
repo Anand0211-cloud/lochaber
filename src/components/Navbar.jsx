@@ -9,24 +9,39 @@ const Navbar = () => {
           <img src={logo} alt="Lochaber Logo" className="h-8 md:h-10 w-auto object-contain" />
         </Link>
         <div className="hidden md:flex items-center gap-8">
-          <Link className="font-['Inter'] font-medium text-sm tracking-wide text-slate-600 dark:text-slate-400 hover:text-[#003036] dark:hover:text-white transition-colors" to="/services">Services</Link>
           <div className="relative group">
             <button className="font-['Inter'] font-medium text-sm tracking-wide text-slate-600 dark:text-slate-400 hover:text-[#003036] dark:hover:text-white transition-colors flex items-center gap-1">
-              Target Groups <span className="material-symbols-outlined text-xs">keyboard_arrow_down</span>
+              Leistungen <span className="material-symbols-outlined text-xs">keyboard_arrow_down</span>
             </button>
-            <div className="absolute left-0 top-full pt-4 hidden group-hover:block w-56 animate-in fade-in slide-in-from-top-2 duration-200">
+            <div className="absolute left-0 top-full pt-4 hidden group-hover:block w-64 animate-in fade-in slide-in-from-top-2 duration-200">
               <div className="bg-white dark:bg-slate-800 shadow-xl border border-slate-100 dark:border-slate-700 p-2">
-                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/target-groups/developers">Project Developers</Link>
-                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/target-groups/insurers">Banks & Insurers</Link>
-                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/target-groups/brokers">Brokers & Portfolio Holders</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50 font-semibold border-b border-slate-100 dark:border-slate-700 mb-1" to="/services">Alle Leistungen</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/leistungen/basis-check">Basis Check</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/services/potential-analysis">Potenzialanalyse</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/services/feasibility-study">Machbarkeitsstudie</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/services/bank-check">Bank Check</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/services/portfolio-scan">Portfolio Scan</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/leistungen/partner-flat">Partner Flat</Link>
               </div>
             </div>
           </div>
-          <Link className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors" to="/about">About</Link>
-          <Link className="font-['Inter'] font-medium text-sm tracking-wide text-slate-600 dark:text-slate-400 hover:text-[#003036] dark:hover:text-white transition-colors" to="/knowledge">Knowledge</Link>
+          <div className="relative group">
+            <button className="font-['Inter'] font-medium text-sm tracking-wide text-slate-600 dark:text-slate-400 hover:text-[#003036] dark:hover:text-white transition-colors flex items-center gap-1">
+              Zielgruppen <span className="material-symbols-outlined text-xs">keyboard_arrow_down</span>
+            </button>
+            <div className="absolute left-0 top-full pt-4 hidden group-hover:block w-56 animate-in fade-in slide-in-from-top-2 duration-200">
+              <div className="bg-white dark:bg-slate-800 shadow-xl border border-slate-100 dark:border-slate-700 p-2">
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/target-groups/developers">Projektentwickler</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/target-groups/insurers">Banken & Versicherer</Link>
+                <Link className="block px-4 py-2 text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700/50" to="/target-groups/brokers">Makler & Bestandshalter</Link>
+              </div>
+            </div>
+          </div>
+          <Link className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-white transition-colors" to="/about">Über uns</Link>
+          <Link className="font-['Inter'] font-medium text-sm tracking-wide text-slate-600 dark:text-slate-400 hover:text-[#003036] dark:hover:text-white transition-colors" to="/knowledge">Wissen</Link>
         </div>
         <div className="flex items-center gap-4">
-          <Link to="/contact" className="px-5 py-2 editorial-gradient text-on-primary font-medium text-sm scale-95 active:scale-100 transition-transform">Request Analysis</Link>
+          <Link to="/contact" className="px-5 py-2 editorial-gradient text-on-primary font-medium text-sm scale-95 active:scale-100 transition-transform">Analyse anfragen</Link>
         </div>
       </div>
     </nav>

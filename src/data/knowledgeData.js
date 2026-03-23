@@ -1,132 +1,144 @@
 export const categories = [
-  { id: 'kfw', label: 'KfW funding', description: 'Current funding programs, QNG certification.' },
-  { id: 'potential', label: 'Development potential', description: 'Identifying densification potential and hidden value.' },
-  { id: 'esg', label: 'ESG & Banks', description: 'ESG obligations and MaRisk-compliant valuation.' },
-  { id: 'trends', label: 'Market trends', description: 'PropTech developments and digitization.' },
-  { id: 'examples', label: 'Practical examples', description: 'Anonymized case studies and analyses.' }
+  { id: 'kfw', label: 'KfW-Förderung', description: 'Aktuelle Förderprogramme, QNG-Zertifizierung.' },
+  { id: 'potential', label: 'Bebauungspotenzial', description: 'Nachverdichtungspotenzial und verborgene Werte identifizieren.' },
+  { id: 'esg', label: 'ESG & Banken', description: 'ESG-Pflichten und MaRisk-konforme Bewertung.' },
+  { id: 'trends', label: 'Markttrends', description: 'PropTech-Entwicklungen und Digitalisierung.' },
+  { id: 'examples', label: 'Praxisbeispiele', description: 'Anonymisierte Fallstudien und Analysen.' }
 ];
 
 export const blogPosts = [
   {
     id: 1,
-    title: "Understanding KfW Funding for Residential Projects",
-    category: "KfW funding",
+    title: "KfW-Förderung für Wohnbauprojekte verstehen",
+    category: "KfW-Förderung",
     date: "2024-03-21",
     author: "Wolf Probst",
-    summary: "A comprehensive guide to leveraging KfW subsidies and loans for energy-efficient building projects in Germany.",
+    summary: "Ein umfassender Leitfaden zur Nutzung von KfW-Zuschüssen und -Darlehen für energieeffiziente Bauprojekte in Deutschland.",
     content: `
-      <p>The Kreditanstalt für Wiederaufbau (KfW) plays a crucial role in financing sustainable real estate developments...</p>
-      <h2>Key Programs for 2024</h2>
+      <p>Die Kreditanstalt für Wiederaufbau (KfW) spielt eine entscheidende Rolle bei der Finanzierung nachhaltiger Immobilienentwicklungen...</p>
+      <h2>Wichtige Programme 2024</h2>
       <ul>
-        <li><strong>Program 261:</strong> Residential building - credit for energy-efficient renovation.</li>
-        <li><strong>Program 297/298:</strong> Climate-friendly new construction.</li>
+        <li><strong>Programm 261:</strong> Wohngebäude – Kredit für energieeffiziente Sanierung.</li>
+        <li><strong>Programm 297/298:</strong> Klimafreundlicher Neubau.</li>
       </ul>
     `,
     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1000",
-    slug: "understanding-kfw-funding"
+    slug: "understanding-kfw-funding",
+    seoTitle: "KfW-Förderung Grundstück & Wohnungsbau Guide",
+    seoDescription: "Umfassender Guide zur KfW-Förderung für energieeffiziente Wohngebäude in Deutschland. Profitieren Sie von Subventionen & zinsgünstigen Krediten."
   },
   {
     id: 6,
-    title: "QNG Certification: The Key to Enhanced KfW Subsidies",
-    category: "KfW funding",
+    title: "QNG-Zertifizierung: Der Schlüssel zu höheren KfW-Förderungen",
+    category: "KfW-Förderung",
     date: "2024-03-18",
     author: "Wolf Probst",
-    summary: "Why the Quality Seal for Sustainable Buildings (QNG) is essential for maximizing your funding potential in 2024.",
+    summary: "Warum das Qualitätssiegel Nachhaltiges Gebäude (QNG) 2024 für die Maximierung Ihres Förderpotenzials unerlässlich ist.",
     content: `
-      <p>The introduction of the QNG seal has changed the landscape of KfW funding...</p>
+      <p>Die Einführung des QNG-Siegels hat die Landschaft der KfW-Förderung verändert...</p>
     `,
     image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1000",
-    slug: "qng-certification-kfw"
+    slug: "qng-certification-kfw",
+    seoTitle: "QNG-Siegel & KfW-Förderung 2024 | Lochaber",
+    seoDescription: "Warum das QNG-Siegel (Qualitätssiegel Nachhaltiges Gebäude) für maximale KfW-Förderung 2024 unerlässlich ist. Experten-Insights von Lochaber."
   },
   {
     id: 2,
-    title: "Maximizing Property Potential through Strategic Analysis",
-    category: "Development potential",
+    title: "Immobilienpotenzial durch strategische Analyse maximieren",
+    category: "Bebauungspotenzial",
     date: "2024-03-15",
     author: "Wolf Probst",
-    summary: "How deep-dive technical and market analysis can uncover hidden value in brownfield sites.",
+    summary: "Wie fundierte technische und Marktanalysen verborgene Werte in Brachflächen aufdecken können.",
     content: `
-      <p>Every piece of land holds potential, but not all potential is obvious...</p>
-      <h2>The Lochaber Approach</h2>
-      <p>We combine market data with technical feasibility studies to create a "best-use" scenario for every property.</p>
+      <p>Jedes Grundstück birgt Potenzial, aber nicht jedes Potenzial liegt auf der Hand...</p>
+      <h2>Der Lochaber-Ansatz</h2>
+      <p>Wir kombinieren Marktdaten mit technischen Machbarkeitsstudien, um ein „Best-Use"-Szenario für jede Immobilie zu erstellen.</p>
     `,
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000",
-    slug: "maximizing-property-potential"
+    slug: "maximizing-property-potential",
+    seoTitle: "Bebauungspotenzial Analyse & Optimierung Immobilien",
+    seoDescription: "So identifizieren Sie versteckte Potenziale in Ihrem Immobilienportfolio. Strategische Analyse für maximale Wertsteigerung bundesweit."
   },
   {
     id: 3,
-    title: "The Rise of ESG Banking in Real Estate Finance",
-    category: "ESG & Banks",
+    title: "Der Aufstieg von ESG-Banking in der Immobilienfinanzierung",
+    category: "ESG & Banken",
     date: "2024-03-10",
     author: "Wolf Probst",
-    summary: "Exploring how Environmental, Social, and Governance (ESG) criteria are reshaping the lending landscape.",
+    summary: "Wie Umwelt-, Sozial- und Governance-Kriterien (ESG) die Kreditvergabelandschaft umgestalten.",
     content: `
-      <p>ESG is no longer just a buzzword; it's a fundamental pillar of modern banking...</p>
+      <p>ESG ist längst kein Schlagwort mehr – es ist ein fundamentaler Baustein moderner Bankwesen...</p>
     `,
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
-    slug: "rise-of-esg-banking"
+    slug: "rise-of-esg-banking",
+    seoTitle: "ESG Immobilien Banken & Finanzierungstrends",
+    seoDescription: "Wie ESG-Kriterien die Immobilienfinanzierung revolutionieren. Einblick in die Anforderungen von Banken an nachhaltige Assets."
   },
   {
     id: 4,
-    title: "PropTech 2024: Digitization of the Real Estate Industry",
-    category: "Market trends",
+    title: "PropTech 2024: Digitalisierung der Immobilienbranche",
+    category: "Markttrends",
     date: "2024-03-05",
     author: "Wolf Probst",
-    summary: "An analysis of the most impactful technologies reaching the market this year.",
+    summary: "Eine Analyse der wirkungsvollsten Technologien, die dieses Jahr auf den Markt kommen.",
     content: `
-      <p>Modernization is accelerating. From AI valuations to blockchain transactions...</p>
+      <p>Die Modernisierung beschleunigt sich. Von KI-Bewertungen bis hin zu Blockchain-Transaktionen...</p>
     `,
     image: "https://images.unsplash.com/photo-1512403754473-27835f7b9984?auto=format&fit=crop&q=80&w=1000",
-    slug: "market-trends-2024"
+    slug: "market-trends-2024",
+    seoTitle: "Immobilien Trends 2024: Digitalisierung & KI",
+    seoDescription: "Die wichtigsten Tech-Trends für die Immobilienbranche 2024. Von KI-Bewertungen bis hin zu digitalen Transaktionsprozessen."
   },
   {
     id: 5,
-    title: "Case Study: Multi-Unit Optimization in Berlin",
-    category: "Practical examples",
+    title: "Fallstudie: Nachverdichtungsoptimierung in Berlin",
+    category: "Praxisbeispiele",
     date: "2024-02-28",
     author: "Wolf Probst",
-    summary: "Identifying 15% densification potential through AI-assisted zoning analysis.",
+    summary: "15% Nachverdichtungspotenzial durch KI-gestützte Zoning-Analyse identifiziert.",
     content: `
-      <p>In this anonymized study, we look at a residential block in Berlin-Mitte...</p>
+      <p>In dieser anonymisierten Studie betrachten wir einen Wohnblock in Berlin-Mitte...</p>
     `,
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=1000",
-    slug: "case-study-berlin-optimization"
+    image: "/src/assets/knowledge-thumb.png",
+    slug: "case-study-berlin-optimization",
+    seoTitle: "Potenzialanalyse Berlin: Fallstudie Nachverdichtung",
+    seoDescription: "Fallstudie: 15% Nachverdichtungspotenzial in Berlin durch KI-gestützte Zoning-Analyse identifiziert. Praktische Insights von Lochaber."
   }
 ];
 
 export const faqData = [
   {
-    category: "General",
+    category: "Allgemein",
     questions: [
       {
-        q: "What services does Lochaber provide?",
-        a: "Lochaber provides AI-assisted real estate analysis, feasibility studies, ESG risk checks, and strategic consulting for developers, banks, and brokers."
+        q: "Welche Leistungen bietet Lochaber an?",
+        a: "Lochaber bietet KI-gestützte Immobilienanalysen, Machbarkeitsstudien, ESG-Risikochecks und strategische Beratung für Entwickler, Banken und Makler."
       },
       {
-        q: "How fast can I get a property analysis?",
-        a: "Our standard AI analysis takes 2-3 business days. More complex feasibility studies can take up to 10 days depending on the scope."
+        q: "Wie schnell erhalte ich eine Grundstücksanalyse?",
+        a: "Unsere Standard-KI-Analyse dauert 2–3 Werktage. Komplexere Machbarkeitsstudien können je nach Umfang bis zu 10 Tage in Anspruch nehmen."
       }
     ]
   },
   {
-    category: "Funding & ESG",
+    category: "Förderung & ESG",
     questions: [
       {
-        q: "Which KfW programs are currently most relevant?",
-        a: "Program 261 (Renovation) and 297/298 (Climate-friendly New Construction) are the cornerstones of current residential funding."
+        q: "Welche KfW-Programme sind derzeit am relevantesten?",
+        a: "Programm 261 (Sanierung) und 297/298 (Klimafreundlicher Neubau) sind die Eckpfeiler der aktuellen Wohnbauförderung."
       },
       {
-        q: "Do you provide QNG certification support?",
-        a: "Yes, we consult on the technical requirements for the Quality Seal for Sustainable Buildings (QNG), which is often a prerequisite for top-tier funding."
+        q: "Bieten Sie Unterstützung bei der QNG-Zertifizierung?",
+        a: "Ja, wir beraten zu den technischen Anforderungen für das Qualitätssiegel Nachhaltiges Gebäude (QNG), das oft Voraussetzung für die höchste Förderstufe ist."
       }
     ]
   },
   {
-    category: "Technology",
+    category: "Technologie",
     questions: [
       {
-        q: "Where does your data come from?",
-        a: "We utilize our proprietary database combined with syte.ms data, covering over 62 million data sets across Germany."
+        q: "Woher stammen Ihre Daten?",
+        a: "Wir nutzen unsere proprietäre Datenbank in Kombination mit syte.ms-Daten, die über 62 Millionen Datensätze in ganz Deutschland abdecken."
       }
     ]
   }

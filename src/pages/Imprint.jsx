@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const Imprint = () => {
   return (
     <Layout>
+      <SEO title="Impressum" description="Impressum von Lochaber Consulting - van Valkenburg GmbH." />
       <main className="pt-32 pb-24 px-8 max-w-4xl mx-auto font-body antialiased">
         <h1 className="text-5xl font-bold text-primary tracking-tight mb-12 font-headline">Impressum</h1>
         

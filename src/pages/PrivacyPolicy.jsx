@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const PrivacyPolicy = () => {
   return (
     <Layout>
+      <SEO title="Datenschutzerklärung" description="Datenschutzerklärung von Lochaber Consulting - Informationen zur Datenerfassung und zum Datenschutz." />
       <main className="pt-32 pb-24 px-8 max-w-4xl mx-auto font-body antialiased">
         <h1 className="text-5xl font-bold text-primary tracking-tight mb-12 font-headline">Datenschutzerklärung</h1>
         

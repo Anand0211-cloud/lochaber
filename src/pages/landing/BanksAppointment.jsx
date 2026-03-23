@@ -6,18 +6,16 @@ const BanksAppointment = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
   const bankNameInput = searchParams.get('bank') || '';
-  const bankName = bankNameInput ? decodeURIComponent(bankNameInput) : '[Bank name]';
+  const bankName = bankNameInput ? decodeURIComponent(bankNameInput) : '[Bankname]';
 
   useEffect(() => {
-    // Add noindex to the head
     const metaR = document.createElement('meta');
     metaR.name = 'robots';
     metaR.content = 'noindex';
     document.head.appendChild(metaR);
     
-    // Set page title
     const originalTitle = document.title;
-    document.title = `Personal Offer - ${bankName}`;
+    document.title = `Persönliches Angebot - ${bankName}`;
     
     return () => {
       document.head.removeChild(metaR);
@@ -34,7 +32,7 @@ const BanksAppointment = () => {
           <div className="absolute inset-0 z-0">
             <img 
               className="w-full h-full object-cover opacity-40 mix-blend-overlay" 
-              alt="Banking district at twilight" 
+              alt="Bankenviertel in der Dämmerung" 
               src="file:///C:/Users/tagej/.gemini/antigravity/brain/df719e31-00af-4486-b788-c5b5ef14ae3a/banks_landing_hero_bg_1774250252258.png"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
@@ -42,22 +40,22 @@ const BanksAppointment = () => {
           
           <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
             <div className="max-w-4xl animate-fadeIn">
-              <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-[10px] font-bold tracking-[0.3em] mb-8 rounded-sm">PERSONALIZED STRATEGY OFFER</span>
+              <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-[10px] font-bold tracking-[0.3em] mb-8 rounded-sm">PERSONALISIERTES STRATEGIEANGEBOT</span>
               <h1 className="text-6xl md:text-[5.5rem] font-bold text-white tracking-tighter leading-[0.9] mb-8">
-                Your personal offer – <br/>
-                real estate analysis for <span className="text-secondary italic">{bankName}</span>
+                Ihr persönliches Angebot – <br/>
+                Immobilienanalyse für <span className="text-secondary italic">{bankName}</span>
               </h1>
               <p className="text-xl md:text-2xl text-on-primary-container leading-relaxed mb-12 max-w-2xl font-light">
-                Bridging the gap between AI-powered data precision and institutional consulting expertise. 
-                Tailored for the unique regulatory landscape of <span className="text-white font-medium italic">modern banking.</span>
+                Die Brücke zwischen KI-gestützter Datenpräzision und institutioneller Beratungsexpertise. 
+                Maßgeschneidert für die einzigartige regulatorische Landschaft des <span className="text-white font-medium italic">modernen Bankwesens.</span>
               </p>
               <div className="flex flex-wrap gap-6">
                 <button className="px-10 py-5 editorial-gradient text-on-primary font-bold text-xs tracking-[0.2em] uppercase transition-all hover:shadow-[0_0_40px_rgba(27,71,77,0.5)] hover:-translate-y-1">
-                  Schedule Consultation
+                  Beratungstermin vereinbaren
                 </button>
                 <div className="flex items-center gap-4 px-6 py-4 bg-white/5 backdrop-blur-md border border-white/10">
                   <span className="material-symbols-outlined text-secondary">verified_user</span>
-                  <span className="text-xs text-white/80 font-bold tracking-widest uppercase">Institutionally Trusted</span>
+                  <span className="text-xs text-white/80 font-bold tracking-widest uppercase">Institutionell vertraut</span>
                 </div>
               </div>
             </div>
@@ -66,17 +64,17 @@ const BanksAppointment = () => {
           {/* Floating Data Badge */}
           <div className="absolute bottom-20 right-8 hidden lg:block w-72 glass-effect bg-white/5 border border-white/10 p-6 rounded-sm shadow-2xl animate-float">
             <div className="flex justify-between items-center mb-4">
-              <span className="text-[10px] text-secondary tracking-widest font-bold uppercase">Analysis Status</span>
+              <span className="text-[10px] text-secondary tracking-widest font-bold uppercase">Analysestatus</span>
               <span className="material-symbols-outlined text-secondary text-sm">shield_with_heart</span>
             </div>
-            <p className="text-white text-sm font-light mb-4">Regulatory alignment: <span className="text-secondary font-bold">100% MaRisk</span></p>
+            <p className="text-white text-sm font-light mb-4">Regulatorische Konformität: <span className="text-secondary font-bold">100% MaRisk</span></p>
             <div className="space-y-2">
               <div className="h-[2px] bg-white/10 w-full overflow-hidden relative">
                 <div className="h-full bg-secondary w-full animate-progress"></div>
               </div>
               <div className="flex justify-between text-[8px] text-white/40 tracking-widest font-bold">
-                <span>ESG SCORING</span>
-                <span>ACTIVE</span>
+                <span>ESG-SCORING</span>
+                <span>AKTIV</span>
               </div>
             </div>
           </div>
@@ -87,31 +85,31 @@ const BanksAppointment = () => {
           <div className="max-w-7xl mx-auto px-8">
             <div className="grid md:grid-cols-2 gap-24 items-center">
               <div className="max-w-xl">
-                <h2 className="text-secondary font-bold text-xs uppercase tracking-[0.4em] mb-6">The Institutional Imperative</h2>
+                <h2 className="text-secondary font-bold text-xs uppercase tracking-[0.4em] mb-6">Der institutionelle Imperativ</h2>
                 <h3 className="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-8 leading-[1.1]">
-                  Compliance is no longer a checklist. It's a <span className="italic">strategic asset.</span>
+                  Compliance ist keine Checkliste mehr. Es ist ein <span className="italic">strategisches Asset.</span>
                 </h3>
                 <p className="text-on-surface-variant text-lg leading-relaxed mb-10">
-                  Lochaber provides the forensic depth required by risk departments and the market speed needed by transaction teams. 
-                  Our analyses are the gold standard for navigating BaFin requirements and ESG mandates.
+                  Lochaber liefert die forensische Tiefe, die Risikoabteilungen benötigen, und die Marktgeschwindigkeit, die Transaktionsteams brauchen. 
+                  Unsere Analysen sind der Goldstandard für die Navigation durch BaFin-Anforderungen und ESG-Vorgaben.
                 </p>
                 <div className="grid grid-cols-2 gap-8 pt-8 border-t border-outline-variant/30">
                   <div>
                     <span className="text-3xl font-bold text-primary block mb-1 tracking-tighter">48h</span>
-                    <span className="text-[10px] text-secondary font-bold tracking-widest uppercase">Turnaround</span>
+                    <span className="text-[10px] text-secondary font-bold tracking-widest uppercase">Bearbeitungszeit</span>
                   </div>
                   <div>
                     <span className="text-3xl font-bold text-primary block mb-1 tracking-tighter">1984</span>
-                    <span className="text-[10px] text-secondary font-bold tracking-widest uppercase">Legacy Established</span>
+                    <span className="text-[10px] text-secondary font-bold tracking-widest uppercase">Tradition seit</span>
                   </div>
                 </div>
               </div>
               <div className="relative aspect-[4/5] bg-surface-container-low overflow-hidden shadow-2xl">
-                <img className="w-full h-full object-cover grayscale opacity-70" alt="Architectural grid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHPAfp8JS3eYLyfER0yydmuL4zFL0FzpvFKvUKNmiYy2EZ9Fz5Y1ZKtqp_cztOklq4h7SWIBroB9yKb9eJuj3HjdiKIbyupST9uE9PnhwimQls0FyLJ2WQXXLboc2P4YDp1guxqrdTpfNMha2T1a-0n6MutkG86EJfDav4nf_Ipe0TkkKOFNWNBVF9HG8y4R530vgkeQ-aRjrgAEwFt3ZM7Dz55eLzaULLXR4v3-YvCNOgJIvvdvabElvYgGegipHsBlCTQliokPU"/>
+                <img className="w-full h-full object-cover grayscale opacity-70" alt="Architektonisches Raster" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHPAfp8JS3eYLyfER0yydmuL4zFL0FzpvFKvUKNmiYy2EZ9Fz5Y1ZKtqp_cztOklq4h7SWIBroB9yKb9eJuj3HjdiKIbyupST9uE9PnhwimQls0FyLJ2WQXXLboc2P4YDp1guxqrdTpfNMha2T1a-0n6MutkG86EJfDav4nf_Ipe0TkkKOFNWNBVF9HG8y4R530vgkeQ-aRjrgAEwFt3ZM7Dz55eLzaULLXR4v3-YvCNOgJIvvdvabElvYgGegipHsBlCTQliokPU"/>
                 <div className="absolute inset-0 bg-primary/20 mix-blend-color"></div>
                 <div className="absolute top-12 -right-12 bg-secondary p-12 text-on-secondary shadow-2xl rotate-3">
                   <p className="text-4xl font-bold tracking-tighter mb-1 font-headline">MaRisk</p>
-                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">Full Compliance</p>
+                  <p className="text-[10px] font-bold tracking-[0.2em] uppercase opacity-80">Volle Compliance</p>
                 </div>
               </div>
             </div>
@@ -122,8 +120,8 @@ const BanksAppointment = () => {
         <section className="py-32 bg-surface-container-low px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-24">
-              <h2 className="text-secondary font-bold text-xs uppercase tracking-[0.4em] mb-4">Core Benefits</h2>
-              <h3 className="text-4xl font-bold text-primary tracking-tight">Predictable Precision. Unmatched Speed.</h3>
+              <h2 className="text-secondary font-bold text-xs uppercase tracking-[0.4em] mb-4">Kernvorteile</h2>
+              <h3 className="text-4xl font-bold text-primary tracking-tight">Planbare Präzision. Unübertroffene Geschwindigkeit.</h3>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
@@ -131,34 +129,34 @@ const BanksAppointment = () => {
               <div className="md:col-span-8 bg-surface-container-lowest p-12 border border-outline-variant/30 flex flex-col justify-between group overflow-hidden relative">
                 <div className="relative z-10 transition-transform group-hover:-translate-y-2 duration-500">
                   <span className="material-symbols-outlined text-secondary text-5xl mb-8 font-light">account_balance_wallet</span>
-                  <h4 className="text-3xl font-bold text-primary mb-6">Predictable costs</h4>
+                  <h4 className="text-3xl font-bold text-primary mb-6">Planbare Kosten</h4>
                   <p className="text-on-surface-variant max-w-lg leading-relaxed text-lg italic">
-                    "Transparency is the foundation of institutional trust. Our fixed-price models eliminate the ambiguity of traditional consulting fees."
+                    „Transparenz ist die Grundlage institutionellen Vertrauens. Unsere Festpreismodelle beseitigen die Mehrdeutigkeit traditioneller Beratungshonorare."
                   </p>
                 </div>
                 <div className="absolute bottom-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                   <span className="material-symbols-outlined text-[15rem]">payments</span>
                 </div>
-                <div className="z-10 text-[10px] font-bold text-secondary tracking-widest uppercase">Strategic Value Layer 01</div>
+                <div className="z-10 text-[10px] font-bold text-secondary tracking-widest uppercase">Strategische Wertebene 01</div>
               </div>
 
               {/* Delivery Time */}
               <div className="md:col-span-4 bg-primary p-12 flex flex-col justify-between text-on-primary group hover:bg-primary-container transition-colors duration-500">
                 <div>
                   <span className="text-7xl font-bold text-secondary tracking-tighter mb-4 block group-hover:scale-110 transition-transform origin-left">48h</span>
-                  <h4 className="text-2xl font-bold mb-4">Delivery time</h4>
+                  <h4 className="text-2xl font-bold mb-4">Lieferzeit</h4>
                 </div>
                 <p className="text-on-primary-container text-sm leading-relaxed opacity-80">
-                  Initial potential analyses and regulatory scoring delivered within 48 hours for rapid institutional decision-making.
+                  Erste Potenzialanalysen und regulatorisches Scoring innerhalb von 48 Stunden für schnelle institutionelle Entscheidungsfindung.
                 </p>
               </div>
 
               {/* One Contact Person */}
               <div className="md:col-span-12 bg-surface-container-low p-12 border border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-8 group">
                 <div className="flex-1">
-                  <h4 className="text-2xl font-bold text-primary mb-2 italic">Senior Advisory Continuity</h4>
+                  <h4 className="text-2xl font-bold text-primary mb-2 italic">Senior-Beratungskontinuität</h4>
                   <p className="text-on-surface-variant leading-relaxed">
-                    Eliminate institutional friction. Work directly with Wolf Probst—no juniors, no intermediaries, just direct competence.
+                    Institutionellen Aufwand eliminieren. Arbeiten Sie direkt mit Wolf Probst – keine Junioren, keine Zwischenhändler, nur direkte Kompetenz.
                   </p>
                 </div>
                 <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center group-hover:scale-110 transition-transform shadow-xl">
@@ -177,18 +175,18 @@ const BanksAppointment = () => {
 
           <div className="max-w-7xl mx-auto px-8 relative z-10">
             <div className="text-center mb-24">
-              <span className="text-secondary font-bold text-xs uppercase tracking-[0.4em] mb-4 block">Framework Models</span>
-              <h2 className="text-5xl font-bold text-white tracking-tighter">Structured Excellence.</h2>
+              <span className="text-secondary font-bold text-xs uppercase tracking-[0.4em] mb-4 block">Rahmenvertrags-Modelle</span>
+              <h2 className="text-5xl font-bold text-white tracking-tighter">Strukturierte Exzellenz.</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
               {[
-                { name: 'Starter', status: 'Essential Compliance', items: ['Standard ESG Scoring', '48h Digital Delivery'] },
-                { name: 'Standard', status: 'Institutional Choice', items: ['Full ESG Depth Analysis', 'Secure API Integration', 'Monthly Portfolio Scan'], featured: true },
-                { name: 'Premium', status: 'Strategic Partnership', items: ['Unlimited Advisory Hours', 'MaRisk Alignment', 'On-site Consultations'] }
+                { name: 'Starter', status: 'Essentielle Compliance', items: ['Standard ESG-Scoring', '48h digitale Lieferung'] },
+                { name: 'Standard', status: 'Institutionelle Wahl', items: ['Vollständige ESG-Tiefenanalyse', 'Sichere API-Integration', 'Monatlicher Portfolio-Scan'], featured: true },
+                { name: 'Premium', status: 'Strategische Partnerschaft', items: ['Unbegrenzte Beratungsstunden', 'MaRisk-Konformität', 'Vor-Ort-Beratung'] }
               ].map((model) => (
                 <div key={model.name} className={`relative p-12 glass-effect flex flex-col h-full transition-all duration-500 hover:-translate-y-4 ${model.featured ? 'bg-white/10 border-2 border-secondary scale-105 z-20 shadow-2xl' : 'bg-white/5 border border-white/10'}`}>
-                  {model.featured && <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-on-secondary px-4 py-1 text-[8px] font-bold uppercase tracking-widest">Recommended</div>}
+                  {model.featured && <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-on-secondary px-4 py-1 text-[8px] font-bold uppercase tracking-widest">Empfohlen</div>}
                   <h4 className="text-3xl font-bold text-white mb-2">{model.name}</h4>
                   <div className="text-secondary font-bold text-[10px] tracking-widest uppercase mb-10 opacity-80">{model.status}</div>
                   <ul className="space-y-6 mb-12 flex-grow">
@@ -200,7 +198,7 @@ const BanksAppointment = () => {
                     ))}
                   </ul>
                   <button className={`w-full py-5 text-[10px] font-bold tracking-[0.2em] uppercase transition-all ${model.featured ? 'bg-secondary text-on-secondary shadow-[0_0_30px_rgba(117,91,0,0.3)]' : 'border border-white/20 text-white hover:bg-white/10'}`}>
-                    Inquire Details
+                    Details anfragen
                   </button>
                 </div>
               ))}
@@ -223,19 +221,19 @@ const BanksAppointment = () => {
               </div>
             </div>
             <div className="flex-1 text-center lg:text-left">
-              <span className="text-secondary font-bold text-[10px] tracking-[0.4em] mb-4 block uppercase leading-none">Senior Advisory</span>
+              <span className="text-secondary font-bold text-[10px] tracking-[0.4em] mb-4 block uppercase leading-none">Senior-Beratung</span>
               <h3 className="text-5xl md:text-6xl font-bold text-primary mb-4 tracking-tighter">Wolf Probst</h3>
               <p className="text-primary font-bold italic text-lg mb-10 max-w-lg leading-relaxed opacity-80 decoration-secondary decoration-wavy underline-offset-8 underline">
-                "We don't just provide data – we provide the narrative behind the asset."
+                „Wir liefern nicht nur Daten – wir liefern die Geschichte hinter dem Asset."
               </p>
               
               <div className="space-y-4">
                 <a href="mailto:wolf.probst@lochaber.at" className="flex items-center justify-center lg:justify-start gap-4 p-6 bg-surface-container-low hover:bg-white transition-all group border border-outline-variant/10">
                   <span className="material-symbols-outlined text-secondary group-hover:scale-110 transition-transform">mail</span>
-                  <span className="font-bold text-sm tracking-widest text-primary uppercase">Direct Access: wolf.probst@lochaber.at</span>
+                  <span className="font-bold text-sm tracking-widest text-primary uppercase">Direktzugang: wolf.probst@lochaber.at</span>
                 </a>
                 <button className="w-full lg:w-fit px-12 py-6 editorial-gradient text-on-primary font-bold text-xs tracking-[0.3em] uppercase shadow-2xl hover:-translate-y-1 transition-all">
-                  Schedule Private Call
+                  Persönliches Gespräch vereinbaren
                 </button>
               </div>
             </div>
@@ -245,8 +243,8 @@ const BanksAppointment = () => {
         {/* CALENDAR INTEGRATION AREA */}
         <section className="py-32 bg-surface-container-low border-t border-outline-variant/20 px-8 text-center">
           <div className="max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 tracking-tight">Secure Your Appointment</h2>
-            <p className="text-on-surface-variant font-light italic">Confirm a 15-minute introductory session to discuss your institutional requirements.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 tracking-tight">Ihren Termin sichern</h2>
+            <p className="text-on-surface-variant font-light italic">Bestätigen Sie ein 15-minütiges Einführungsgespräch, um Ihre institutionellen Anforderungen zu besprechen.</p>
           </div>
           
           <div className="max-w-6xl mx-auto bg-white shadow-[0_64px_128px_-16px_rgba(0,0,0,0.1)] rounded-[2rem] overflow-hidden min-h-[600px] flex items-center justify-center border border-outline-variant/30 relative group">
@@ -254,9 +252,9 @@ const BanksAppointment = () => {
              <div className="absolute inset-0 bg-primary/2 opacity-0 group-hover:opacity-100 transition-opacity"></div>
              <div className="text-center z-10 px-8">
                <span className="material-symbols-outlined text-7xl text-secondary/40 mb-6 font-light">calendar_today</span>
-               <p className="text-primary font-bold text-xl mb-2">Calendar Integration Active</p>
+               <p className="text-primary font-bold text-xl mb-2">Kalenderintegration aktiv</p>
                <p className="text-on-surface-variant text-sm font-light max-w-md mx-auto">
-                 Embedded scheduling widget (Calendly/HubSpot) dynamically loading institutional availability for <span className="font-bold italic">{bankName}</span>.
+                 Eingebettetes Terminplanung-Widget (Calendly/HubSpot) lädt dynamisch die institutionelle Verfügbarkeit für <span className="font-bold italic">{bankName}</span>.
                </p>
              </div>
           </div>
@@ -265,7 +263,7 @@ const BanksAppointment = () => {
       </main>
       
       {/* GLOBAL NO-INDEX LAYER */}
-      <div className="hidden pointer-events-none" aria-hidden="true">This page is private and not indexed by search engines.</div>
+      <div className="hidden pointer-events-none" aria-hidden="true">Diese Seite ist privat und wird nicht von Suchmaschinen indexiert.</div>
     </Layout>
   );
 };

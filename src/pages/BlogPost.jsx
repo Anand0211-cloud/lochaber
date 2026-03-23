@@ -1,5 +1,6 @@
-import { useParams, Link, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import { blogPosts } from '../data/knowledgeData';
 
 const BlogPost = () => {
@@ -11,8 +12,8 @@ const BlogPost = () => {
     return (
       <Layout>
         <div className="pt-40 pb-20 text-center">
-          <h1 className="text-3xl font-bold mb-4">Post not found</h1>
-          <Link to="/knowledge" className="text-emerald-600 hover:underline">Back to Knowledge</Link>
+          <h1 className="text-3xl font-bold mb-4">Beitrag nicht gefunden</h1>
+          <Link to="/knowledge" className="text-emerald-600 hover:underline">Zurück zum Wissen</Link>
         </div>
       </Layout>
     );
@@ -20,6 +21,22 @@ const BlogPost = () => {
 
   return (
     <Layout>
+      <SEO 
+        title={post.seoTitle || post.title}
+        description={post.seoDescription || post.summary}
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": post.title,
+          "image": post.image,
+          "author": {
+            "@type": "Person",
+            "name": post.author
+          },
+          "datePublished": post.date,
+          "description": post.summary
+        }}
+      />
       <article className="pt-32 pb-20 bg-white dark:bg-slate-950 min-h-screen">
         <div className="max-w-4xl mx-auto px-8">
           {/* Back Button */}
@@ -28,7 +45,7 @@ const BlogPost = () => {
             className="group flex items-center gap-2 text-slate-500 hover:text-[#003036] dark:hover:text-white mb-12 transition-colors font-medium text-sm"
           >
             <span className="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">arrow_back</span>
-            Back to Knowledge
+            Zurück zum Wissen
           </button>
 
           {/* Header */}
@@ -38,7 +55,7 @@ const BlogPost = () => {
                 {post.category}
               </span>
               <span className="text-sm text-slate-400 dark:text-slate-500 font-['Inter']">
-                {new Date(post.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
+                {new Date(post.date).toLocaleDateString('de-DE', { month: 'long', day: 'numeric', year: 'numeric' })}
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#003036] dark:text-white mb-8 leading-[1.1]">
@@ -72,7 +89,7 @@ const BlogPost = () => {
           {/* Related Articles */}
           <div className="mt-32 pt-20 border-t border-outline-variant/20">
             <h3 className="text-2xl font-bold text-primary mb-12 flex items-center gap-4">
-              Related Analysis
+              Verwandte Analysen
               <span className="h-[1px] flex-1 bg-outline-variant/20"></span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -106,7 +123,7 @@ const BlogPost = () => {
                 </button>
              </div>
              <Link to="/contact" className="editorial-gradient px-8 py-3 text-white font-bold rounded-full text-sm shadow-xl shadow-emerald-900/10 hover:translate-y-[-2px] transition-transform">
-               Discuss this Topic
+               Thema besprechen
              </Link>
           </div>
         </div>
