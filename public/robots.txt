@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /landing/banks-appointment
+Disallow: /landing/banken-termin
+
+Sitemap: https://lochaber.de/sitemap.xml

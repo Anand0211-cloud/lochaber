@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  @apply bg-surface text-on-surface;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.editorial-gradient {
+  background: linear-gradient(135deg, #003036 0%, #1b474d 100%);
+}
+
+.glass-effect {
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+
+.tonal-layering {
+  transition: background-color 0.3s ease;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
