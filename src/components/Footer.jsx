@@ -25,6 +25,7 @@ const Footer = () => {
             <li><Link className="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-[#003036] dark:hover:text-white" to="/target-groups/insurers">Banken & Versicherer</Link></li>
             <li><Link className="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-[#003036] dark:hover:text-white" to="/target-groups/brokers">Immobilienmakler</Link></li>
             <li><Link className="font-['Inter'] text-sm text-slate-500 dark:text-slate-400 hover:text-[#003036] dark:hover:text-white" to="/target-groups/developers">Projektentwickler</Link></li>
+            <li><Link className="font-['Inter'] text-sm text-secondary font-bold hover:text-[#003036] dark:hover:text-white" to="/landing/banks-appointment">Termin für Banken</Link></li>
           </ul>
         </div>
         <div className="md:col-span-1">
