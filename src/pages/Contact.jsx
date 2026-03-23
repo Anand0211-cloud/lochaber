@@ -42,12 +42,12 @@ const Contact = () => {
 
   return (
     <Layout>
-      <main className="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+      <main className="pt-32 pb-24 px-6 md:px-8 max-w-7xl mx-auto">
         {/* Hero Section */}
         <section className="mb-24">
           <div className="editorial-grid">
             <div className="col-span-12 lg:col-span-8">
-              <h1 className="text-6xl md:text-7xl font-bold text-primary tracking-tight leading-[1.1] mb-8 font-headline text-balance">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-primary tracking-tight leading-[1.1] mb-8 font-headline text-balance">
                 Präziser Kontakt für strategische Exzellenz.
               </h1>
               <p className="text-xl text-on-surface-variant leading-relaxed max-w-2xl">
@@ -65,7 +65,7 @@ const Contact = () => {
         {/* Contact Form & Info Grid */}
         <div className="editorial-grid">
           {/* Left: Contact Form */}
-          <div className="col-span-12 lg:col-span-7 bg-surface-container-lowest p-10 lg:p-16 border-b-4 border-primary shadow-sm">
+          <div className="col-span-12 lg:col-span-7 bg-surface-container-lowest p-6 md:p-10 lg:p-16 border-b-4 border-primary shadow-sm">
             {submitted ? (
               <div className="h-full flex flex-col items-center justify-center text-center py-12">
                 <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-6">
@@ -209,7 +209,7 @@ const Contact = () => {
 
           {/* Right: Info Panels */}
           <div className="col-span-12 lg:col-span-5 flex flex-col space-y-8">
-            <div className="bg-surface-container-low p-10 flex flex-col space-y-8 h-full">
+            <div className="bg-surface-container-low p-6 md:p-10 flex flex-col space-y-8 h-full">
               <div>
                 <h3 className="text-[10px] font-bold tracking-[0.3em] text-outline uppercase mb-6">Kontaktkanäle</h3>
                 <div className="space-y-8">
@@ -268,7 +268,7 @@ const Contact = () => {
         </div>
 
         {/* Bank Note Section */}
-        <section className="mt-24 p-12 bg-primary text-on-primary relative overflow-hidden">
+        <section className="mt-24 p-8 md:p-12 bg-primary text-on-primary relative overflow-hidden">
           <div className="absolute right-0 top-0 w-1/3 h-full bg-secondary transition-all opacity-10 skew-x-12 translate-x-20"></div>
           <div className="relative z-10 editorial-grid items-center gap-12">
             <div className="col-span-12 lg:col-span-8">

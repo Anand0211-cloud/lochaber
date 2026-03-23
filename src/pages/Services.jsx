@@ -14,13 +14,13 @@ const Services = () => {
       />
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="relative bg-surface overflow-hidden py-24 md:py-32">
-          <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+        <section className="relative bg-surface overflow-hidden py-24 md:py-32 border-b border-outline-variant/10">
+          <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
             <div className="md:col-span-7">
               <span className="inline-block bg-secondary-fixed text-on-secondary-fixed text-[0.7rem] font-bold tracking-[0.15em] uppercase px-3 py-1 mb-6 rounded-sm">
                 Strategische Portfolio-Bewertung
               </span>
-              <h1 className="text-[3.5rem] leading-[1.1] font-bold text-primary tracking-tight mb-8">
+              <h1 className="text-3xl sm:text-5xl md:text-[3.5rem] leading-[1.1] font-bold text-primary tracking-tight mb-8">
                 Potenzialanalyse
               </h1>
               <p className="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-xl">
@@ -51,8 +51,8 @@ const Services = () => {
         </section>
 
         {/* Problem Explanation */}
-        <section className="bg-surface-container-low py-24">
-          <div className="max-w-7xl mx-auto px-8">
+        <section className="bg-surface-container-low py-20 md:py-24">
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
               <div>
                 <h2 className="text-[1.75rem] font-semibold text-primary mb-6 leading-tight">
@@ -68,7 +68,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="grid grid-cols-1 gap-4">
-                <div className="bg-surface-container-lowest p-8 flex items-start gap-6">
+                <div className="bg-surface-container-lowest p-6 md:p-8 flex items-start gap-6">
                   <span className="material-symbols-outlined text-secondary text-3xl">warning</span>
                   <div>
                     <h4 className="font-bold text-primary mb-2">Statische Datensilos</h4>
@@ -88,8 +88,8 @@ const Services = () => {
         </section>
 
         {/* Services Section */}
-        <section className="py-24 bg-surface">
-          <div className="max-w-7xl mx-auto px-8">
+        <section className="py-20 md:py-24 bg-surface">
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
             <div className="mb-16">
               <p className="text-secondary font-bold text-xs tracking-[0.2em] uppercase mb-4">Die Methodik</p>
               <h2 className="text-3xl font-bold text-primary">Kern-Analyseleistungen</h2>
@@ -186,8 +186,8 @@ const Services = () => {
         </section>
 
         {/* 3-Step Process */}
-        <section className="py-24 bg-surface-container-low border-y border-outline-variant/10">
-          <div className="max-w-7xl mx-auto px-8 text-center">
+        <section className="py-20 md:py-24 bg-surface-container-low border-y border-outline-variant/10">
+          <div className="max-w-7xl mx-auto px-6 md:px-8 text-center">
             <h2 className="text-3xl font-bold text-primary mb-20">Der Ablauf</h2>
             <div className="relative">
               {/* Connecting Line (Desktop) */}
@@ -229,15 +229,15 @@ const Services = () => {
         </section>
 
         {/* Target Audience */}
-        <section className="py-24 bg-surface">
-          <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <section className="py-20 md:py-24 bg-surface">
+          <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <div className="aspect-[3/4] bg-surface-container-high flex flex-col group cursor-default overflow-hidden border border-outline/10">
                   <div className="h-2/3 overflow-hidden">
                     <img src={targetDev} alt="Projektentwickler" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale contrast-125" />
                   </div>
-                  <div className="p-8 flex-1 flex flex-col justify-center">
+                  <div className="p-6 md:p-8 flex-1 flex flex-col justify-center">
                     <h5 className="font-bold text-primary text-xl">Projektentwickler</h5>
                     <p className="text-xs text-on-surface-variant mt-2">Machbarkeit vor dem Gebot prüfen.</p>
                   </div>
@@ -246,7 +246,7 @@ const Services = () => {
                   <div className="h-2/3 overflow-hidden">
                     <img src={targetPortfolio} alt="Bestandshalter" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale opacity-80" />
                   </div>
-                  <div className="p-8 flex-1 flex flex-col justify-center">
+                  <div className="p-6 md:p-8 flex-1 flex flex-col justify-center">
                     <h5 className="font-bold text-white text-xl">Bestandshalter</h5>
                     <p className="text-xs text-primary-fixed mt-2">Rendite über etablierte Assets skalieren.</p>
                   </div>
@@ -262,10 +262,10 @@ const Services = () => {
         </section>
 
         {/* Report Preview Section */}
-        <section className="py-24 bg-surface-container-high/30">
-          <div className="max-w-7xl mx-auto px-8">
+        <section className="py-20 md:py-24 bg-surface-container-high/30">
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
             <div className="bg-surface-container-lowest shadow-2xl overflow-hidden max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-12">
-              <div className="md:col-span-4 bg-primary text-on-primary p-12 flex flex-col justify-between">
+              <div className="md:col-span-4 bg-primary text-on-primary p-8 md:p-12 flex flex-col justify-between min-h-[200px]">
                 <div>
                   <div className="text-xl font-bold tracking-tighter mb-12">Lochaber</div>
                   <h3 className="text-2xl font-bold leading-tight">Asset-Analysebericht 2024</h3>
@@ -273,7 +273,7 @@ const Services = () => {
                 </div>
                 <div className="text-xs tracking-widest uppercase text-on-primary-container">Vertrauliche Zusammenfassung</div>
               </div>
-              <div className="md:col-span-8 p-12 bg-white">
+              <div className="md:col-span-8 p-8 md:p-12 bg-white">
                 <div className="space-y-8">
                   <div className="flex justify-between items-center border-b border-outline-variant/30 pb-4">
                     <span className="text-xs font-bold text-outline uppercase tracking-widest">Asset-Referenz</span>
@@ -308,8 +308,8 @@ const Services = () => {
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, #fff 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
           </div>
-          <div className="max-w-7xl mx-auto px-8 text-center relative z-10">
-            <h2 className="text-[2.5rem] font-bold text-white mb-8">Bereit, den Wert Ihrer Immobilie zu entdecken?</h2>
+          <div className="max-w-7xl mx-auto px-6 md:px-8 text-center relative z-10">
+            <h2 className="text-3xl md:text-[2.5rem] font-bold text-white mb-8">Bereit, den Wert Ihrer Immobilie zu entdecken?</h2>
             <p className="text-primary-fixed/80 max-w-2xl mx-auto text-lg mb-12">
               Erhalten Sie eine umfassende digitale Bewertung innerhalb von 48 Stunden. Keine versteckten Kosten. Institutionelle Präzision.
             </p>

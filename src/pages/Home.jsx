@@ -31,7 +31,7 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-8 w-full">
           <div className="max-w-3xl">
             <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-[10px] font-bold tracking-[0.2em] mb-6">GEGRÜNDET 1984</span>
-            <h1 className="text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-8">
               Grundstückspotenzial erkennen. Fundiert entscheiden.
             </h1>
             <p className="text-xl text-on-primary-container leading-relaxed mb-10 max-w-xl">
@@ -58,8 +58,8 @@ const Home = () => {
       </section>
 
       {/* Problem Section */}
-      <section className="py-32 bg-surface">
-        <div className="max-w-7xl mx-auto px-8">
+      <section className="py-20 md:py-32 bg-surface">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="grid md:grid-cols-2 gap-24 items-center">
             <div>
               <h2 className="text-4xl font-bold tracking-tight text-primary mb-4">Die Herausforderung der Immobilienanalyse</h2>
@@ -103,21 +103,21 @@ const Home = () => {
       </section>
 
       {/* USP Cards */}
-      <section className="py-24 bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-8">
-          <div className="grid md:grid-cols-3 gap-0">
-            <div className="bg-surface-container-lowest p-12 border-r border-surface-container">
-              <span className="text-secondary font-bold text-5xl block mb-6">48h</span>
+      <section className="py-16 md:py-24 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+            <div className="bg-surface-container-lowest p-8 md:p-12 border-b md:border-b-0 md:border-r border-surface-container">
+              <span className="text-secondary font-bold text-4xl md:text-5xl block mb-6">48h</span>
               <h3 className="text-xl font-bold mb-4 text-primary">Maximale Geschwindigkeit</h3>
               <p className="text-on-surface-variant leading-relaxed">Erste Potenzialanalyse in unter 48 Stunden für schnelle Entscheidungsfindung.</p>
             </div>
-            <div className="bg-surface-container-lowest p-12 border-r border-surface-container">
-              <span className="text-secondary font-bold text-5xl block mb-6">40J</span>
+            <div className="bg-surface-container-lowest p-8 md:p-12 border-b md:border-b-0 md:border-r border-surface-container">
+              <span className="text-secondary font-bold text-4xl md:text-5xl block mb-6">40J</span>
               <h3 className="text-xl font-bold mb-4 text-primary">Senior-Expertise</h3>
               <p className="text-on-surface-variant leading-relaxed">Tiefverwurzelte Erfahrung in deutschen Immobilienzyklen und komplexen Asset-Bewertungen.</p>
             </div>
-            <div className="bg-surface-container-lowest p-12">
-              <span className="material-symbols-outlined text-secondary text-6xl block mb-6">tactic</span>
+            <div className="bg-surface-container-lowest p-8 md:p-12">
+              <span className="material-symbols-outlined text-secondary text-5xl md:text-6xl block mb-6">tactic</span>
               <h3 className="text-xl font-bold mb-4 text-primary">Klare Handlungsempfehlung</h3>
               <p className="text-on-surface-variant leading-relaxed">Keine generischen Reports. Wir liefern klare binäre Empfehlungen: Kaufen, Halten oder Verkaufen.</p>
             </div>
@@ -139,7 +139,7 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
             {/* Basis Check */}
-            <div className="md:col-span-4 bg-surface-container-lowest p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
+            <div className="md:col-span-4 bg-surface-container-lowest p-6 md:p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
               <div className="flex justify-between mb-12">
                 <span className="material-symbols-outlined text-secondary group-hover:text-white">fact_check</span>
                 <span className="text-xs font-mono opacity-40">01</span>
@@ -148,7 +148,7 @@ const Home = () => {
               <p className="text-sm text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Die grundlegende Validierung von Grundstücksdaten und regulatorischer Konformität.</p>
             </div>
             {/* Potential Analysis */}
-            <div className="md:col-span-4 bg-surface-container-lowest p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
+            <div className="md:col-span-4 bg-surface-container-lowest p-6 md:p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
               <div className="flex justify-between mb-12">
                 <span className="material-symbols-outlined text-secondary group-hover:text-white">trending_up</span>
                 <span className="text-xs font-mono opacity-40">02</span>
@@ -157,7 +157,7 @@ const Home = () => {
               <p className="text-sm text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Verborgene Werttreiber durch architektonische und Marktmodellierung identifizieren.</p>
             </div>
             {/* Feasibility Study */}
-            <div className="md:col-span-4 bg-surface-container-lowest p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
+            <div className="md:col-span-4 bg-surface-container-lowest p-6 md:p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
               <div className="flex justify-between mb-12">
                 <span className="material-symbols-outlined text-secondary group-hover:text-white">architecture</span>
                 <span className="text-xs font-mono opacity-40">03</span>
@@ -166,7 +166,7 @@ const Home = () => {
               <p className="text-sm text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Technische und finanzielle Tiefenanalysen zur Bebaubarkeit.</p>
             </div>
             {/* Bank Check */}
-            <div className="md:col-span-6 bg-surface-container-lowest p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
+            <div className="md:col-span-6 bg-surface-container-lowest p-6 md:p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
               <div className="flex justify-between mb-12">
                 <span className="material-symbols-outlined text-secondary group-hover:text-white">account_balance</span>
                 <span className="text-xs font-mono opacity-40">04</span>
@@ -175,7 +175,7 @@ const Home = () => {
               <p className="text-sm text-on-surface-variant group-hover:text-on-primary-container leading-relaxed">Unabhängige Drittprüfung, speziell zugeschnitten auf Finanzierungsanforderungen und Risikoabteilungen.</p>
             </div>
             {/* Portfolio Scan */}
-            <div className="md:col-span-6 bg-surface-container-lowest p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
+            <div className="md:col-span-6 bg-surface-container-lowest p-6 md:p-8 hover:bg-primary hover:text-white transition-all duration-500 group">
               <div className="flex justify-between mb-12">
                 <span className="material-symbols-outlined text-secondary group-hover:text-white">folder_managed</span>
                 <span className="text-xs font-mono opacity-40">05</span>
@@ -197,7 +197,7 @@ const Home = () => {
                 <p className="text-sm text-on-surface-variant leading-relaxed">Standardisierte Bewertungsprotokolle für großvolumige institutionelle Kreditvergabe.</p>
               </div>
             </div>
-            <div className="md:col-span-4 bg-secondary p-8 flex items-center justify-center">
+            <div className="md:col-span-4 bg-secondary p-8 flex items-center justify-center min-h-[120px]">
               <button className="text-on-secondary font-bold text-sm tracking-widest uppercase hover:underline underline-offset-8">ALLE LEISTUNGEN ANSEHEN</button>
             </div>
           </div>
@@ -243,7 +243,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-20 items-center">
             <div>
               <span className="text-secondary font-bold tracking-[0.3em] text-xs mb-4 block uppercase">Der Lochaber-Vorteil</span>
-              <h2 className="text-4xl font-bold mb-8 leading-tight">Expertise über Generationen hinweg, angetrieben von den Werkzeugen von morgen.</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-tight">Expertise über Generationen hinweg, angetrieben von den Werkzeugen von morgen.</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="border-l-2 border-secondary pl-6">
                   <p className="text-2xl font-bold mb-1">Proprietäre KI</p>
@@ -262,7 +262,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white/5 backdrop-blur-xl p-12 relative">
+            <div className="bg-white/5 backdrop-blur-xl p-8 md:p-12 relative">
               <div className="absolute -top-4 -left-4 text-secondary opacity-20"><span className="material-symbols-outlined text-8xl">format_quote</span></div>
               <p className="text-xl italic font-light leading-relaxed mb-8">„Lochaber liefert nicht nur Daten, sondern die Geschichte hinter dem Asset. Ihre Analyse war der entscheidende Faktor bei unserer letzten 45-Mio.-€-Akquisition."</p>
               <div className="flex items-center gap-4">
@@ -284,14 +284,14 @@ const Home = () => {
       </section>
 
       {/* Final CTA Split Section */}
-      <section className="flex flex-col md:flex-row h-[600px]">
-        <div className="flex-1 bg-secondary text-white p-12 md:p-24 flex flex-col justify-center">
-          <h3 className="text-3xl font-bold mb-6">Projektentwickler, Makler & Eigentümer</h3>
+      <section className="flex flex-col md:flex-row min-h-[600px]">
+        <div className="flex-1 bg-secondary text-white p-8 md:p-24 flex flex-col justify-center">
+          <h3 className="text-2xl md:text-3xl font-bold mb-6">Projektentwickler, Makler & Eigentümer</h3>
           <p className="text-on-secondary mb-10 max-w-md">Sie benötigen eine einmalige Analyse? Unser Analyse-Service ist auf Ihre spezifischen Projektanforderungen zugeschnitten. Erhalten Sie einen umfassenden Basis Check oder eine Potenzialanalyse innerhalb von 48 Stunden.</p>
           <button className="w-fit px-10 py-4 editorial-gradient text-on-primary font-bold text-sm tracking-widest uppercase hover:shadow-2xl transition-all">Analyse anfragen</button>
         </div>
-        <div className="flex-1 bg-primary text-white p-12 md:p-24 flex flex-col justify-center">
-          <h3 className="text-3xl font-bold mb-6">Banken & Versicherer</h3>
+        <div className="flex-1 bg-primary text-white p-8 md:p-24 flex flex-col justify-center border-t border-white/10 md:border-t-0">
+          <h3 className="text-2xl md:text-3xl font-bold mb-6">Banken & Versicherer</h3>
           <p className="text-on-primary-container mb-10 max-w-md">Häufige Transaktionen? Unsere Rahmenverträge bieten Mengenrabatte und priorisierte Bearbeitung für institutionelle Partner. Sehen Sie die Rahmenvertragsdetails für Ihre Organisation.</p>
           <button className="w-fit px-10 py-4 bg-secondary text-on-secondary font-bold text-sm tracking-widest uppercase hover:bg-secondary-container transition-colors">Rahmenvertrag ansehen</button>
         </div>

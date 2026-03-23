@@ -20,7 +20,7 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
               <div className="lg:col-span-7">
                 <span className="inline-block px-3 py-1 bg-secondary text-on-secondary text-[10px] font-bold uppercase tracking-[0.3em] mb-8 rounded-sm">Der Visionär</span>
-                <h1 className="text-7xl lg:text-[7rem] font-bold font-headline tracking-tighter leading-[0.9] mb-8">
+                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] font-bold font-headline tracking-tighter leading-[0.9] mb-8">
                   Wolf <br/><span className="text-secondary">Probst.</span>
                 </h1>
                 <p className="text-secondary font-bold tracking-[0.2em] uppercase text-sm mb-12 flex items-center gap-4">
@@ -28,7 +28,7 @@ const About = () => {
                   Inhaber & leitender Berater
                 </p>
                 <div className="max-w-xl">
-                  <h2 className="text-3xl lg:text-4xl font-light leading-snug mb-8 text-on-primary-container">
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-light leading-snug mb-8 text-on-primary-container">
                     „Technologie allein liefert Zahlen – <span className="text-secondary font-bold italic">Lochaber liefert Antworten.</span>"
                   </h2>
                 </div>
@@ -48,8 +48,8 @@ const About = () => {
         </section>
 
         {/* Biography Section */}
-        <section className="-mt-24 relative z-20 max-w-5xl mx-auto px-8 mb-32">
-          <div className="bg-white dark:bg-slate-900 p-12 lg:p-20 shadow-2xl border-t-8 border-secondary">
+        <section className="-mt-16 md:-mt-24 relative z-20 max-w-5xl mx-auto px-6 md:px-8 mb-24 md:mb-32">
+          <div className="bg-white dark:bg-slate-900 p-8 md:p-12 lg:p-20 shadow-2xl border-t-8 border-secondary">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
               <div>
                 <p className="text-2xl lg:text-3xl text-primary font-bold leading-tight mb-8">
@@ -74,35 +74,35 @@ const About = () => {
             <h2 className="text-4xl font-bold text-primary tracking-tighter">Kernkompetenzen</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-px bg-outline-variant/20 overflow-hidden border border-outline-variant/20">
-            <div className="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-12 flex flex-col justify-between h-[360px] hover:bg-white transition-colors">
+            <div className="md:col-span-3 lg:col-span-4 bg-surface-container-lowest p-8 md:p-12 flex flex-col justify-between min-h-[320px] md:h-[360px] hover:bg-white transition-colors">
               <div>
                 <span className="material-symbols-outlined text-secondary text-4xl mb-6">architecture</span>
                 <h4 className="text-xl font-bold text-primary mb-4">Projektentwicklung</h4>
               </div>
               <p className="text-on-surface-variant leading-relaxed opacity-80">Über 40 Jahre Erfahrung in Planung, Finanzierung und Umsetzung komplexer Immobilienprojekte.</p>
             </div>
-            <div className="md:col-span-3 lg:col-span-4 bg-surface-container-low p-12 flex flex-col justify-between h-[360px]">
+            <div className="md:col-span-3 lg:col-span-4 bg-surface-container-low p-8 md:p-12 flex flex-col justify-between min-h-[320px] md:h-[360px]">
               <div>
                 <span className="material-symbols-outlined text-secondary text-4xl mb-6">energy_savings_leaf</span>
                 <h4 className="text-xl font-bold text-primary mb-4">Energieeffizienz</h4>
               </div>
               <p className="text-on-surface-variant leading-relaxed opacity-80">Spezialist für energieeffiziente Sanierung, KfW-Förderprogramme und Nachhaltigkeitsstandards.</p>
             </div>
-            <div className="md:col-span-6 lg:col-span-4 bg-surface-container p-12 flex flex-col justify-between h-[360px]">
+            <div className="md:col-span-6 lg:col-span-4 bg-surface-container p-8 md:p-12 flex flex-col justify-between min-h-[320px] md:h-[360px]">
               <div>
                 <span className="material-symbols-outlined text-secondary text-4xl mb-6">library_books</span>
                 <h4 className="text-xl font-bold text-primary mb-4">Fachpublikationen</h4>
               </div>
               <p className="text-on-surface-variant leading-relaxed opacity-80">Autor mehrerer Fachbücher sowie zahlreicher Praxisleitfäden und Fachartikel, die Branchenstandards definieren.</p>
             </div>
-            <div className="md:col-span-3 lg:col-span-6 bg-surface-container-high p-12 flex flex-col justify-between h-[320px]">
+            <div className="md:col-span-3 lg:col-span-6 bg-surface-container-high p-8 md:p-12 flex flex-col justify-between min-h-[280px] md:h-[320px]">
               <div>
                 <span className="material-symbols-outlined text-secondary text-4xl mb-6">memory</span>
                 <h4 className="text-xl font-bold text-primary mb-4 text-secondary">KI-Analyse</h4>
               </div>
               <p className="text-on-surface-variant leading-relaxed opacity-80">Frühzeitige Adoption und Integration modernster KI-Analysetools in den institutionellen Beratungsprozess.</p>
             </div>
-            <div className="md:col-span-3 lg:col-span-6 bg-surface-container-highest p-12 flex flex-col justify-between h-[320px]">
+            <div className="md:col-span-3 lg:col-span-6 bg-surface-container-highest p-8 md:p-12 flex flex-col justify-between min-h-[280px] md:h-[320px]">
               <div>
                 <span className="material-symbols-outlined text-secondary text-4xl mb-6">hub</span>
                 <h4 className="text-xl font-bold text-primary mb-4">Institutionelles Netzwerk</h4>
@@ -118,7 +118,7 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-center">
               <div className="py-24 relative z-10 pr-12">
                 <h3 className="text-secondary font-bold text-xs uppercase tracking-[0.3em] mb-8">Philosophie</h3>
-                <h4 className="text-4xl lg:text-6xl font-bold mb-12 leading-tight tracking-tight">
+                <h4 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-12 leading-tight tracking-tight">
                   Daten sind Rohstoff. <br/><span className="text-secondary italic">Expertise ist der Mehrwert.</span>
                 </h4>
                 <div className="space-y-8 text-on-primary-container leading-relaxed max-w-lg">
